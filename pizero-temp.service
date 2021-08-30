@@ -1,0 +1,16 @@
+[Unit]
+Description = Reads temps from a DHT22 temperature/humidity sensor and sends to InfluxDB
+After = network.target # Assuming you want to start after network interfaces are made available
+ 
+[Service]
+Type = simple
+ExecStart = python <Path of the script you want to run>
+User = # User to run the script as
+Group = # Group to run the script as
+Restart = on-failure # Restart when there are errors
+SyslogIdentifier = pizero-temp.log
+RestartSec = 5
+TimeoutStartSec = infinity
+ 
+[Install]
+WantedBy = multi-user.target # Make it accessible to other users
