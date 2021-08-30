@@ -35,3 +35,14 @@ Sends metrics to InfluxDB, once every 60 seconds in the form of the following do
     }
 }]
 ```
+
+Create a service after installation:
+
+* Copy temp.service to `/etc/systemd/system/pizero-temp.service`
+
+Run the following commands to enable the service and start
+```
+systemctl enable pizero-temp
+systemctl daemon-reload
+systemctl start pizero-temp
+```
