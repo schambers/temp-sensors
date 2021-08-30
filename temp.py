@@ -28,7 +28,7 @@ while True:
                 "tags": {
                     "host": "pizero-garage"
                 },
-                "time": datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
+                "time": datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
                 "fields": {
                     "temperature": tempf,
                     "humidity": humidity
