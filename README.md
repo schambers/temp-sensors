@@ -1,5 +1,5 @@
 # pizero-temp
-Pi Zero W Temperature/Humidity sensor script
+Pi Zero W Temperature/Humidity sensor script. Runs on a pi zero W (or any hardware that can leverage a temperature/humidity sensor) via DHT22 digital temperature sensor. Sends readings to InfluxDB for time series and visualization on Grafana/etc.
 
 Sample script from playing with a Pi Zero W and a DHT22 temperature sensor
 * [Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
