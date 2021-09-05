@@ -1,6 +1,4 @@
 import Adafruit_DHT
-import time
-import datetime
 import yaml
 from influxdb import InfluxDBClient
 
@@ -28,7 +26,6 @@ while True:
                 "tags": {
                     "host": "pizero-garage"
                 },
-                "time": datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
                 "fields": {
                     "temperature": tempf,
                     "humidity": humidity
