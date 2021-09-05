@@ -28,7 +28,6 @@ Sends metrics to InfluxDB, once every 60 seconds in the form of the following do
     "tags": {
         "host": "pizero-garage"
     },
-    "time": "2021-08-30T01:00:00Z",
     "fields": {
         "temperature": 75.4,
         "humidity": 41
