@@ -16,8 +16,8 @@ const char* ssid = "";
 const char* password = "";
 
 // InfluxDB server url & db name
-#define INFLUXDB_URL "http://192.168.0.80:8090"
-#define INFLUXDB_DB_NAME "pizero-temp"
+#define INFLUXDB_URL "influxdb-url-here"
+#define INFLUXDB_DB_NAME "db-name-here"
 
 // Single InfluxDB instance
 InfluxDBClient client(INFLUXDB_URL, INFLUXDB_DB_NAME);
